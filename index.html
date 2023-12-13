@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="header">
+                <h1>DojoWeather</h1>
+            </div>
+            <ul>
+                <li onclick="alert('Loading weather report...')">Burbank</li>
+                <li onclick="alert('Loading weather report...')">Chicago</li>
+                <li onclick="alert('Loading weather report...')">Dallas</li>
+            </ul>
+        </div>
+    </div>
+        <div class="body-container">
+            <div class="top-body">
+                <h2>San Jose</h2>
+                <div class="temp">
+                    <label>show temperature in</label>
+                    <select name="celcius" id="celcius">
+                        <option value="celcius">°C</option>
+                        <option value="farenheight">°F</option>
+                    </select>
+                </div>
+            </div>
+            <div class="main-body">
+                <div class="daily-forecast">
+                    <div class="today">
+                        <p class="days">Today</p>
+                        <img src="./assets/some_rain.png" alt="some rain logo" class="weather-logo">
+                        <p class="weather">some rain</p>
+                        <div class="temp-numbers">
+                            <p class="left">24°</p>
+                            <p class="right">18°</p>
+                        </div>
+                    </div>
+                    <div class="tmrw">
+                        <p class="days">Tomorrow</p>
+                        <img src="./assets/some_sun.png" alt="some sun logo" class="weather-logo">
+                        <p class="weather">some sun</p>
+                        <div class="temp-numbers">
+                            <p class="left">27°</p>
+                            <p class="right">19°</p>
+                        </div>
+                    </div>
+                    <div class="friday">
+                        <p class="days">Friday</p>
+                        <img src="./assets/some_clouds.png" alt="some clouds logo" class="weather-logo">
+                        <p class="weather">some clouds</p>
+                        <div class="temp-numbers">
+                            <p class="left">21°</p>
+                            <p class="right">16°</p>
+                        </div>
+                    </div>
+                    <div class="saturday">
+                        <p class="days">Saturday</p>
+                        <img src="./assets/some_sun.png" alt="some sun logo" class="weather-logo">
+                        <p class="weather">some sun</p>
+                        <div class="temp-numbers">
+                            <p class="left">26°</p>
+                            <p class="right">21°</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="alertbox">
+                    <div class="cookie">
+                        <img src="./assets/cookie.png" alt="cookie logo">
+                    </div>
+                    <div class="alert-msg">
+                        <p class="stop">Stop! Cookie time</p>
+                        <p class="alert">We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+                    </div>
+                    <button onclick="this.remove()">I Accept</button>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+</body>
+</html>

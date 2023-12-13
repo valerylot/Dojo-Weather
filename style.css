@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Balsamiq sans";
+}
+/* TOP NAV BAR STARTS HERE */
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: #A0C5F8;
+    height: 5vw;
+    /* margin: 0 180px; */
+    gap: 30px;
+}
+
+h1{
+    font-size: 45px;
+}
+
+ul{
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    list-style: none;
+    gap: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* TOP BODY STARTS HERE */
+.top-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vw;
+    /* THIS MARGIN IS USED TO MATCH WITH THE DAILY FORECAST TO ALIGN */
+    margin: 0 220px;
+    border-bottom: 2px solid black;
+}
+
+h2{
+    font-size: 35px;
+}
+
+/* DAILY FORECAST STARTS HERE */
+.daily-forecast{
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: blueviolet; */
+    align-items: center;
+    height: 380px;
+    /* MARGIN BELOW IS HOW TO ALIGN WITH THE TOP BODY PART! */
+    margin: 0 180px; 
+    padding-top: 25px;
+}
+.weather-logo{
+    height: 10vw;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+.days{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    /* margin: 0 20px; */
+}
+.today, .tmrw, .friday, .saturday{
+    /* border: 2px solid black; */
+    /* width: 180px; */
+    height: 350px;
+    background-color: #EEEEEE;
+    padding: 12px;
+}
+.temp-numbers{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    font-size: 25px;
+    /* text-align: center; */
+}
+.weather{
+    text-align: center;
+    padding: 40px 50px;
+    font-size: 20px;
+}
+.left{
+    color: #CF2A27;
+}
+.right{
+    color: #2C78E4;
+}
+
+/* ALERT BOX STARTS HERE */
+.alertbox{
+    display: flex;
+    margin: 0 220px; 
+    border: 5px solid black;
+    height: 5vw;
+    padding: 10px;
+    margin-top: 5px;
+}
+.alert-msg{
+    width: 700px;
+}
+.alertbox img{
+    padding: 5px;
+}
+.stop{
+    font-weight: bold;
+    font-size: 25px;
+}
+button{
+    width: 150px;
+    height: 30px;
+    background-color: #A0C5F8;
+    border: 2px solid black;
+    box-shadow: 3px 3px 3px black;
+    margin-top: 25px;
+}
+.alert{
+    font-size: 15px;
+}
