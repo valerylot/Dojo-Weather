@@ -1,3 +1,4 @@
-function hide(element){
-    element.remove();
+var alertbox = document.querySelector(".alertbox")
+function remove() {
+    alertbox.remove();
 }
